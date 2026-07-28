@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#35374A">
+  <meta name="description" content="Чертежи проекта МИТК-РК: просмотр листов ЕСКД и CAD-превью, скачивание исходников КОМПАС CDW.">
+  <title>Чертежи — МИТК-РК</title><link rel="stylesheet" href="assets/styles.css"><link rel="icon" href="assets/brand/mitk-rk-logo.png" type="image/png">
+  <noscript><style>[data-reveal]{opacity:1!important;transform:none!important}</style></noscript>
+  <style>
+    .skip-link{position:absolute;top:-100%;left:16px;z-index:999;padding:8px 16px;background:#35374A;color:#fff;font-weight:700;text-decoration:none}.skip-link:focus{top:0}
+[data-page="drawings"] .page-hero{background:linear-gradient(105deg,#fff 0 72%,#f2f3f6 72%)}
+[data-page="drawings"] .page-hero .eyebrow::before{background:linear-gradient(90deg,#6a6d80,#9093a6)}
+[data-page="drawings"] .drawing-preview{background:#e8e9ed;background-image:linear-gradient(#d8d9de 1px,transparent 1px),linear-gradient(90deg,#d8d9de 1px,transparent 1px);background-size:20px 20px}
+[data-page="drawings"] .drawing-kicker b{color:#555868}
+    .drawing-intro{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);gap:32px;align-items:start;margin-bottom:48px}
+    .drawing-note{border-left:4px solid #ff6b00;background:linear-gradient(90deg,#fff7f1 0%,#f3f3f5 100%);padding:22px 24px;color:#35374a}.drawing-note strong{display:block;margin-bottom:8px;text-transform:uppercase;letter-spacing:.08em;color:#ff6b00}
+    .drawing-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+    .drawing-card{margin:0;border:1px solid rgba(53,55,74,.18);background:#fff;box-shadow:0 18px 50px rgba(25,28,45,.08);overflow:hidden;transition:transform .25s ease,box-shadow .25s ease;position:relative}
+    .drawing-card:hover{transform:translateY(-4px);box-shadow:0 24px 60px rgba(25,28,45,.12)}
+    .drawing-card::before{content:"";position:absolute;top:0;left:0;width:3px;height:0;background:linear-gradient(180deg,#ff6b00,#ff3d00);transition:height .3s ease;z-index:1}
+    .drawing-card:hover::before{height:100%}
+    .drawing-preview{display:flex;align-items:center;justify-content:center;min-height:340px;padding:20px;background:#dfe1e6;cursor:zoom-in;transition:background .3s}
+    .drawing-card:hover .drawing-preview{background:#d5d7dc}
+    .drawing-preview img{display:block;width:100%;height:320px;object-fit:contain;background:#fff;box-shadow:0 4px 16px rgba(25,28,45,.14);transition:transform .3s}
+    .drawing-card:hover .drawing-preview img{transform:scale(1.02)}
+    .drawing-body{padding:24px}.drawing-kicker{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:12px;color:#707386;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.drawing-kicker b{color:#ff6b00}
+    .drawing-body h2{margin:0 0 10px;font-size:1.45rem}.drawing-body p{margin:0;color:#666979}.drawing-file{display:block;margin-top:15px;padding:8px 12px;background:#f8f8f6;border-left:2px solid #ff6b00;color:#35374a;font-family:ui-monospace,Consolas,monospace;font-size:.78rem;overflow-wrap:anywhere}
+    .drawing-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.drawing-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 16px;border:1px solid #35374a;color:#35374a;font-size:.82rem;font-weight:800;text-decoration:none;text-transform:uppercase;letter-spacing:.04em;transition:all .2s ease}.drawing-actions a:hover{background:rgba(53,55,74,.05)}.drawing-actions a:last-child{border-color:#ff6b00;background:#ff6b00;color:#fff;box-shadow:0 4px 12px rgba(255,107,0,.2)}.drawing-actions a:last-child:hover{background:#e65c00;box-shadow:0 6px 16px rgba(255,107,0,.3)}
+    .drawing-card--primary{grid-column:1/-1}.drawing-card--primary .drawing-preview{min-height:520px}.drawing-card--primary .drawing-preview img{height:500px}
+    @media(max-width:900px){.drawing-intro,.drawing-grid{grid-template-columns:1fr}.drawing-card--primary{grid-column:auto}.drawing-preview,.drawing-card--primary .drawing-preview{min-height:260px}.drawing-preview img,.drawing-card--primary .drawing-preview img{height:auto;max-height:420px}}
+  </style>
+</head>
+<body data-page="drawings">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><img src="assets/brand/mitk-rk-logo.png" alt="МИТК-РК"></a><button class="menu-button" type="button" aria-expanded="false" aria-label="Открыть меню"><span></span><span></span><span></span></button><nav class="main-nav" aria-label="Основная навигация"><a data-page="project" href="project.html">Проект</a><a data-page="software" href="software.html">Программный комплекс</a><a data-page="models" href="models.html">Конструкция</a><a data-page="drawings" href="drawings.html">Чертежи</a><a data-page="stand" href="stand.html">Стенд</a><a data-page="technology" href="technology.html">Изготовление</a><a data-page="validation" href="validation.html">Проверка</a><a data-page="economics" href="economics.html">Экономика</a><a data-page="documents" href="documents.html">Комплект</a></nav></div></header>
+  <main id="main">
+    <section class="page-hero"><div class="container page-hero-grid" data-reveal><div><div class="eyebrow">04 · Конструкторская документация</div><h1>Чертежи проекта</h1><p>Полная галерея выпущенных конструкторских исходников: пять листов КОМПАС. Каждый материал можно рассмотреть и скачать.</p></div><div class="page-meta"><div><span>Всего</span><strong>5 файлов</strong></div><div><span>КОМПАС</span><strong>5 CDW</strong></div></div></div></section>
+    <section class="section"><div class="container">
+      <div class="drawing-intro" data-reveal><div><div class="eyebrow">Выпущенный комплект</div><h2>Листы ЕСКД</h2><p>Превью извлечены непосредственно из оригинальных CDW. Они точно соответствуют размещённым исходникам и не перерисованы для сайта.</p></div><aside class="drawing-note"><strong>Как пользоваться</strong>Нажмите на изображение, чтобы открыть лист крупно. Кнопка «Скачать» сохраняет исходный файл для КОМПАС‑3D или AutoCAD.</aside></div>
+      <div class="drawing-grid">
+        <figure class="drawing-card drawing-card--primary" data-reveal>
+          <a class="drawing-preview" href="assets/drawing-previews/cdw-impeller.png" target="_blank" rel="noopener"><img src="assets/drawing-previews/cdw-impeller.png" alt="Чертёж композитного рабочего колеса с видами, разрезами, размерами и основной надписью" loading="eager"></a>
+          <figcaption class="drawing-body"><div class="drawing-kicker"><span>Лист 01 · CDW · ЕСКД</span><b>Рабочее колесо</b></div><h2>Композитное рабочее колесо</h2><p>Сборочный конструкторский лист гибридного рабочего колеса.</p><span class="drawing-file">ЕТМН.19.01.02.59.00.000.001 Композитное рабочее колесо.cdw</span><div class="drawing-actions"><a href="assets/drawing-previews/cdw-impeller.png" target="_blank" rel="noopener">Открыть лист ↗</a><a href="https://drive.google.com/file/d/14qceqPDaJAWjk0AByHIG2bruUscGnQRK/view" target="_blank" rel="noopener">Оригинал в Drive ↗</a><a href="drawings/ЕТМН.19.01.02.59.00.000.001 Композитное  рабочее колесо.cdw" download>Скачать CDW ↓</a></div></figcaption>
+        </figure>
+        <figure class="drawing-card" data-reveal>
+          <a class="drawing-preview" href="assets/drawing-previews/cdw-diffuser.png" target="_blank" rel="noopener"><img src="assets/drawing-previews/cdw-diffuser.png" alt="Чертёж диффузора с видами, размерами и основной надписью" loading="lazy"></a>
+          <figcaption class="drawing-body"><div class="drawing-kicker"><span>Лист 02 · CDW · ЕСКД</span><b>Диффузор</b></div><h2>Диффузор</h2><p>Лист неподвижной части проточного тракта.</p><span class="drawing-file">ЕТМН.19.01.02.59.00.000.002 Диффузор.cdw</span><div class="drawing-actions"><a href="assets/drawing-previews/cdw-diffuser.png" target="_blank" rel="noopener">Открыть лист ↗</a><a href="https://drive.google.com/file/d/1ZhqYspcpW17QoVcPv2aX0s3Bl9hveprv/view" target="_blank" rel="noopener">Оригинал в Drive ↗</a><a href="drawings/ЕТМН.19.01.02.59.00.000.002 Диффузор.cdw" download>Скачать CDW ↓</a></div></figcaption>
+        </figure>
+        <figure class="drawing-card" data-reveal>
+          <a class="drawing-preview" href="assets/drawing-previews/cdw-volute.png" target="_blank" rel="noopener"><img src="assets/drawing-previews/cdw-volute.png" alt="Чертёж корпуса улитки с видами, разрезами, размерами и основной надписью" loading="lazy"></a>
+          <figcaption class="drawing-body"><div class="drawing-kicker"><span>Лист 03 · CDW · ЕСКД</span><b>Корпус</b></div><h2>Корпус улитки</h2><p>Конструкторский лист спирального корпуса компрессора.</p><span class="drawing-file">ЕТМН.19.01.02.59.00.000.003 - Улитка.cdw</span><div class="drawing-actions"><a href="assets/drawing-previews/cdw-volute.png" target="_blank" rel="noopener">Открыть лист ↗</a><a href="https://drive.google.com/file/d/1m5SdD76j6MMX4iTQFWeowQdhtYg4g2HK/view" target="_blank" rel="noopener">Оригинал в Drive ↗</a><a href="drawings/ЕТМН.19.01.02.59.00.000.003 - Улитка.cdw" download>Скачать CDW ↓</a></div></figcaption>
+        </figure>
+        <figure class="drawing-card" data-reveal>
+          <a class="drawing-preview" href="assets/drawing-previews/cdw-flange.png" target="_blank" rel="noopener"><img src="assets/drawing-previews/cdw-flange.png" alt="Чертёж фланца с видами, разрезами, размерами и основной надписью" loading="lazy"></a>
+          <figcaption class="drawing-body"><div class="drawing-kicker"><span>Лист 04 · CDW · ЕСКД</span><b>Фланец</b></div><h2>Фланец ДМРВ</h2><p>Конструкторский лист присоединительного фланца.</p><span class="drawing-file">ЕТМН.19.01.02.59.00.000.003 - Фланец.cdw</span><div class="drawing-actions"><a href="assets/drawing-previews/cdw-flange.png" target="_blank" rel="noopener">Открыть лист ↗</a><a href="https://drive.google.com/file/d/1IPSxq8ik1JV2v-EeZXCaQ7195GapdeCh/view" target="_blank" rel="noopener">Оригинал в Drive ↗</a><a href="drawings/ЕТМН.19.01.02.59.00.000.003 - Фланец.cdw" download>Скачать CDW ↓</a></div></figcaption>
+        </figure>
+        <figure class="drawing-card" data-reveal>
+          <a class="drawing-preview" href="assets/drawing-previews/cdw-cover.png" target="_blank" rel="noopener"><img src="assets/drawing-previews/cdw-cover.png" alt="Чертёж крышки корпуса с видами, разрезами, размерами и основной надписью" loading="lazy"></a>
+          <figcaption class="drawing-body"><div class="drawing-kicker"><span>Лист 05 · CDW · ЕСКД</span><b>Крышка</b></div><h2>Крышка корпуса</h2><p>Конструкторский лист передней крышки корпуса.</p><span class="drawing-file">ЕТМН.19.01.02.59.00.000.004 - Крышка.cdw</span><div class="drawing-actions"><a href="assets/drawing-previews/cdw-cover.png" target="_blank" rel="noopener">Открыть лист ↗</a><a href="https://drive.google.com/file/d/17G_40j8NAqSCRnokgDWOgzfyCDJ7g9w1/view" target="_blank" rel="noopener">Оригинал в Drive ↗</a><a href="drawings/ЕТМН.19.01.02.59.00.000.004 - Крышка.cdw" download>Скачать CDW ↓</a></div></figcaption>
+        </figure>
+
+      </div>
+    </div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-grid"><img class="footer-logo" src="assets/brand/mitk-rk-logo.png" alt="МИТК-РК"><p>Конструкторская документация завершённого проекта МИТК‑РК. Санкт‑Петербург, 2026.</p><a href="documents.html">Полный комплект →</a></div></footer><script src="assets/site.js"></script>
+</body>
+</html>

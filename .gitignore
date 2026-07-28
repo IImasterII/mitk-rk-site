@@ -1,0 +1,7 @@
+launch.py
+qr_code.png
+cloudflared.exe
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

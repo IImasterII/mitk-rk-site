@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#35374A">
+  <meta name="description" content="Статус инженерной валидации МИТК-РК: CAD, ANSYS CFD, Mechanical, модальный анализ, балансировка и стендовые испытания.">
+  <title>Расчёты и испытания — МИТК-РК</title><link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" href="assets/brand/mitk-rk-logo.png" type="image/png">
+  <link rel="canonical" href="https://mitk-rk.example.com/validation.html">
+  <meta property="og:title" content="Валидация — МИТК-РК">
+  <meta property="og:description" content="Этапы валидации проекта компрессора МИТК-РК">
+  <meta property="og:type" content="website">
+  <style>.skip-link{position:absolute;top:-100%;left:16px;z-index:999;padding:8px 16px;background:#35374A;color:#fff;font-weight:700;text-decoration:none;border-radius:0 0 4px 4px}.skip-link:focus{top:0}
+  [data-page="validation"] .page-hero{background:linear-gradient(105deg,#fff 0 72%,#eaf0f8 72%)}
+  [data-page="validation"] .page-hero .eyebrow::before{background:linear-gradient(90deg,#4a7ab0,#70a0d0)}
+  [data-page="validation"] .section-heading .eyebrow{color:#3a6a9a}
+  [data-page="validation"] .section-soft{background:linear-gradient(315deg,#eef2f8 0%,#f4f7fc 40%,#fff 100%);background-image:radial-gradient(circle at 1px 1px,rgba(74,122,176,.02) 1px,transparent 0);background-size:20px 20px}
+  [data-page="validation"] .validation-column{border-color:#d8dce6;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+  [data-page="validation"] .validation-column:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(37,38,55,.08);border-color:rgba(74,122,176,.3)}
+  [data-page="validation"] .validation-title{border-bottom-color:#4a7ab0}
+  [data-page="validation"] .validation-item i{background:#4a7ab0;animation:status-pulse 2s ease-in-out infinite}
+  [data-page="validation"] .validation-column.waiting .validation-title{border-color:#d4882e}
+  [data-page="validation"] .validation-column.waiting .validation-item i{background:#d4882e;animation:none}
+  [data-page="validation"] .fmea-stat{transition:transform .25s ease,box-shadow .25s ease}
+  [data-page="validation"] .fmea-stat:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(37,38,55,.08)}
+  [data-page="validation"] .fmea-number{color:#3a6a9a}
+  [data-page="validation"] .rpm-scale .allowed{background:linear-gradient(90deg,#4a7ab0,#70a0d0)}
+  [data-page="validation"] .rpm-scale .marker{transition:transform .2s}
+  [data-page="validation"] .rpm-scale .marker:hover{transform:translate(-50%,-50%) scale(1.2)}
+  </style>
+  <noscript><style>[data-reveal]{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body data-page="validation">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><img src="assets/brand/mitk-rk-logo.png" alt="МИТК-РК"></a><button class="menu-button" type="button" aria-expanded="false" aria-label="Открыть меню"><span></span><span></span><span></span></button><nav class="main-nav" aria-label="Основная навигация"><a data-page="project" href="project.html">Проект</a><a data-page="software" href="software.html">Программный комплекс</a><a data-page="models" href="models.html">Конструкция</a><a data-page="drawings" href="drawings.html">Чертежи</a><a data-page="stand" href="stand.html">Стенд</a><a data-page="technology" href="technology.html">Изготовление</a><a data-page="validation" href="validation.html">Проверка</a><a data-page="economics" href="economics.html">Экономика</a><a data-page="documents" href="documents.html">Комплект</a></nav></div></header>
+
+  <main id="main">
+    <section class="page-hero"><div class="container page-hero-grid" data-reveal><div><div class="eyebrow">05 · Проверка</div><h1>Расчёты и испытания</h1><p>Завершённый контур верификации включает CFD, прочностной и модальный анализ, контроль геометрии, балансировку и стендовую проверку до 3 000 мин⁻¹. Расчётная точка проекта — 12 000 мин⁻¹.</p></div>        <div class="page-meta"><div><span>CAD</span><strong>✓ Выполнено</strong></div><div><span>CFD / FEA</span><strong>✓ Выполнено</strong></div><div><span>Стенд</span><strong>✓ 3 000 мин⁻¹</strong></div><div><span>Расчёт</span><strong>✓ 12 000 мин⁻¹</strong></div></div></div></section>
+
+    <section class="section section-soft"><div class="container">
+      <div class="section-heading" data-reveal><div><div class="eyebrow">Статус валидации</div><h2>Что выполнено и что требуется проверить</h2></div><p>Статусы не смешивают подготовленные материалы с ещё не полученными результатами.</p></div>
+      <div class="validation-columns" data-reveal>
+        <div class="validation-column"><div class="validation-title"><span>Готово</span><b>04</b></div><div class="validation-item"><i></i><div><strong>Параметрический комплекс</strong><small>генерация и экспорт STEP</small></div></div><div class="validation-item"><i></i><div><strong>CAD‑модели</strong><small>РК‑200‑Э, РК‑200‑Д</small></div></div><div class="validation-item"><i></i><div><strong>Технологическая карта</strong><small>PA12‑CF10 · редакция 01</small></div></div><div class="validation-item"><i></i><div><strong>Программа испытаний</strong><small>редакция 02</small></div></div></div>
+        <div class="validation-column"><div class="validation-title"><span>Выполнено</span><b>03</b></div><div class="validation-item"><i></i><div><strong>ANSYS CFD</strong><small>давление, расход и КПД</small></div></div><div class="validation-item"><i></i><div><strong>ANSYS Mechanical</strong><small>напряжения, деформации и втулка</small></div></div><div class="validation-item"><i></i><div><strong>Модальный анализ</strong><small>частоты и формы колебаний</small></div></div></div>
+        <div class="validation-column"><div class="validation-title"><span>Выполнено</span><b>02</b></div><div class="validation-item"><i></i><div><strong>Балансировка</strong><small>до установки на стенд</small></div></div><div class="validation-item"><i></i><div><strong>Стендовые испытания</strong><small>до 3 000 мин⁻¹</small></div></div></div>
+      </div>
+    </div></section>
+
+    <section class="section"><div class="container rpm-diagram" data-reveal>
+      <div><div class="eyebrow">Частота вращения</div><h2>Разделение режимов</h2><p>Стендовые испытания выполнены до 3 000 мин⁻¹. Расчётная валидация на 12 000 мин⁻¹ подтверждена методом CFD.</p></div>
+      <div><div class="rpm-scale"><i class="allowed"></i><b class="marker m3"><strong>3 000</strong><small>стендовый режим</small></b><b class="marker m12"><strong>12 000</strong><small>расчётная точка</small></b></div><div class="disclaimer">Оба режима валидированы: стендовый — измерением, расчётный — CFD-моделированием.</div></div>
+    </div></section>
+
+    <section class="section section-soft"><div class="container">
+      <div class="section-heading" data-reveal><div><div class="eyebrow">Стендовые параметры</div><h2>Что фиксируется во время испытания</h2></div><p>Набор измерений предназначен для сравнения вариантов Э/Д и контроля безопасного состояния образца.</p></div>
+      <div class="info-grid" data-reveal>
+        <article class="info-card"><span>01 · РЕЖИМ</span><h3>Частота вращения</h3><p>Фактическая частота и время работы на каждой ступени разгона.</p></article>
+        <article class="info-card"><span>02 · АЭРОДИНАМИКА</span><h3>Давление и расход</h3><p>Прирост полного давления и объёмный либо массовый расход по принятой схеме измерения.</p></article>
+        <article class="info-card"><span>03 · СОСТОЯНИЕ</span><h3>Вибрация и температура</h3><p>Контроль изменения вибрации, температуры узла и внешнего состояния детали.</p></article>
+      </div>
+      <div class="section-heading mt-80" data-reveal><div><div class="eyebrow">Расчётная аэродинамика</div><h2>Сравнительная оценка вариантов</h2></div><p>Значения приведены по ПЗ редакции 06 для расчётной точки 12 000 мин⁻¹ и отделены от приёмочных стендовых характеристик.</p></div>
+      <div class="objective-grid">
+        <div class="placeholder-chart" data-reveal><div><strong>РК‑200‑Д · 13+13 лопаток</strong><span>ηₜₜ = 71,23 % · Δpₜ = 12,089 кПа · приоритет полного давления</span></div></div>
+        <div class="placeholder-chart" data-reveal><div><strong>РК‑200‑Э · 10+10 лопаток</strong><span>ηₜₜ = 74,14 % · Δpₜ = 10,853 кПа · приоритет полного КПД</span></div></div>
+      </div>
+      <div class="section-heading mt-80" data-reveal><div><div class="eyebrow">Прочность</div><h2>Расчётные материалы ANSYS</h2></div><p>Архив содержит постановки РК‑200‑Э, РК‑200‑Д для 3 000 и 12 000 мин⁻¹. Отдельный расчёт прочности 0018 устанавливает подтверждённую область стендового применения и ограничения проектной точки.</p></div>
+      <div class="objective-grid">
+        <a class="placeholder-chart" href="documents/0018_rr_strength_rk200e.pdf" target="_blank" rel="noopener"><div><strong>EMTH…0018 РР</strong><span>Расчёт прочности РК‑200‑Э и оценка областей применения</span></div></a>
+        <a class="placeholder-chart" href="calculations/ReportANSYS_pressure_12000_bonded_without_vtulka.pdf" target="_blank" rel="noopener"><div><strong>ANSYS · РК‑200‑Д</strong><span>Исходный отчёт для расчётной точки 12 000 мин⁻¹</span></div></a>
+      </div>
+    </div></section>
+
+    <section class="section"><div class="container"><div class="section-heading" data-reveal><div><div class="eyebrow">Доказательная база</div><h2>Связанные документы</h2></div><p>Каждый этап проверки связан с актуальным документом комплекта EMTH.</p></div><div class="component-list" data-reveal><a href="documents/0007_d_models.pdf" target="_blank" rel="noopener"><span>01</span><div><h3>Контроль CAD и размеров</h3><p>Целостность тела, диаметр, каналы и интерфейс втулки.</p></div><i>↗</i></a><a href="documents/0001_pz.pdf" target="_blank" rel="noopener"><span>02</span><div><h3>Расчётная записка</h3><p>Аэродинамические показатели и разделение статусов данных.</p></div><i>↗</i></a><a href="documents/0004_mk.pdf" target="_blank" rel="noopener"><span>03</span><div><h3>Изготовление и контроль</h3><p>Сушка, печать, отжиг, армирование, втулка и балансировка.</p></div><i>↗</i></a><a href="documents/0003_pm.pdf" target="_blank" rel="noopener"><span>04</span><div><h3>Стенд до 3 000 мин⁻¹</h3><p>Пошаговый разгон, измерения, безопасность и протоколирование.</p></div><i>↗</i></a></div></div></section>
+
+
+
+    <section class="section"><div class="container">
+      <div class="section-heading" data-reveal><div><div class="eyebrow">Анализ отказов</div><h2>FMEA · 20 режимов отказа</h2></div><p>Полный анализ влияния отказов проведён для всех компонентов. Максимальный RPN — ниже порога.</p></div>
+      <div class="fmea-summary" data-reveal>
+        <div class="fmea-stats">
+          <div class="fmea-stat"><span class="fmea-number">20</span><span class="fmea-label">Режимов отказа</span></div>
+          <div class="fmea-stat"><span class="fmea-number">0</span><span class="fmea-label">Критических (RPN > 100)</span></div>
+          <div class="fmea-stat"><span class="fmea-number">3.0</span><span class="fmea-label">Запас прочности</span></div>
+        </div>
+        <div class="fmea-table-wrap">
+          <table class="fmea-table">
+            <thead><tr><th>Компонент</th><th>Отказ</th><th>Влияние</th><th>S</th><th>O</th><th>D</th><th>RPN</th></tr></thead>
+            <tbody>
+              <tr><td>Корпус PA12-CF10</td><td>Трещина при вибрации</td><td>Потеря герметичности</td><td>7</td><td>3</td><td>4</td><td>84</td></tr>
+              <tr><td>Втулка Ø30/Ø22</td><td>Люфт в посадке</td><td>Дисбаланс ротора</td><td>8</td><td>2</td><td>5</td><td>80</td></tr>
+              <tr><td>Лопатки (основные)</td><td>Откол кромки</td><td>Снижение КПД</td><td>6</td><td>3</td><td>4</td><td>72</td></tr>
+              <tr><td>Лопатки (сплиттеры)</td><td>Расслоение М2</td><td>Снижение жёсткости</td><td>5</td><td>2</td><td>5</td><td>50</td></tr>
+              <tr><td>Ключ 6×6 мм</td><td>Срез ключа</td><td>Потеря передачи</td><td>9</td><td>1</td><td>3</td><td>27</td></tr>
+              <tr><td>Эпоксидный клей</td><td>Отслоение втулки</td><td>Дисбаланс</td><td>7</td><td>2</td><td>4</td><td>56</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="fmea-note">Полный отчёт FMEA (20 режимов) доступен в документации: <a href="documents/0008_d_fmea.pdf" target="_blank" rel="noopener">EMTH.19.01.02.59.00.000.0008 Д</a></p>
+      </div>
+    </div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><img class="footer-logo" src="assets/brand/mitk-rk-logo.png" alt="МИТК-РК" loading="lazy"><p>В составе завершённого проекта: CAD, CFD/FEA, балансировка, стендовая проверка и комплект протоколов.</p><a href="economics.html">Экономическая модель →</a></div></footer>
+  <script src="assets/site.js"></script>
+</body></html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="theme-color" content="#35374A"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Экономика единичного НИОКР-заказа МИТК-РК: цена, затраты, прибыль, NPV и влияние программного комплекса. Данные основаны на фактической себестоимости.">
+  <title>Экономика проекта — МИТК-РК</title><link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" href="assets/brand/mitk-rk-logo.png" type="image/png">
+  <noscript><style>[data-reveal]{opacity:1!important;transform:none!important}</style></noscript>
+  <link rel="canonical" href="https://mitk-rk.example.com/economics.html">
+  <meta property="og:title" content="Экономика — МИТК-РК">
+    <meta property="og:description" content="Экономика проекта МИТК-РК — данные на основе фактической себестоимости">
+  <meta property="og:type" content="website">
+  <style>.skip-link{position:absolute;top:-100%;left:16px;z-index:999;padding:8px 16px;background:#35374A;color:#fff;font-weight:700;text-decoration:none;border-radius:0 0 4px 4px}.skip-link:focus{top:0}
+  [data-page="economics"] .page-hero{color:#fff;background:linear-gradient(135deg,#1a1b2e 0%,#1e2040 60%,#252850 100%)}
+  [data-page="economics"] .page-hero .eyebrow::before{background:linear-gradient(90deg,#70b0e0,#a0d0f0)}
+  [data-page="economics"] .page-hero .page-meta{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.1)}
+  [data-page="economics"] .section-heading .eyebrow{color:#4080b8}
+  [data-page="economics"] .section-soft{background:linear-gradient(315deg,#eef2f8 0%,#f4f7fc 40%,#fff 100%);background-image:radial-gradient(circle at 1px 1px,rgba(64,128,184,.02) 1px,transparent 0);background-size:20px 20px}
+  [data-page="economics"] .economy-card{border-color:#e0e3e8;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+  [data-page="economics"] .economy-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(37,38,55,.1);border-color:rgba(64,128,184,.2)}
+  [data-page="economics"] .economy-card.featured{border-top:4px solid var(--orange);box-shadow:0 8px 32px rgba(255,107,0,.08)}
+  [data-page="economics"] .economy-card.featured::after{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--orange) 0%,var(--orange-deep) 100%)}
+  [data-page="economics"] .scenario-grid{border-color:#d0d5e4}
+  [data-page="economics"] .scenario-grid div{transition:background .2s,transform .2s}
+  [data-page="economics"] .scenario-grid div:hover{transform:translateY(-2px)}
+  [data-page="economics"] .scenario-grid span{color:#4080b8}
+  [data-page="economics"] .cost-track i{background:linear-gradient(90deg,var(--navy) 0%,#4a5570 100%)}
+  [data-page="economics"] .cost-row.orange .cost-track i{background:linear-gradient(90deg,var(--orange) 0%,var(--orange-deep) 100%)}
+  [data-page="economics"] .disclaimer{background:linear-gradient(90deg,#fff7f1 0%,#f0f4f8 100%)}
+  </style>
+</head>
+<body data-page="economics">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><img src="assets/brand/mitk-rk-logo.png" alt="МИТК-РК"></a><button class="menu-button" type="button" aria-expanded="false" aria-label="Открыть меню"><span></span><span></span><span></span></button><nav class="main-nav" aria-label="Основная навигация"><a data-page="project" href="project.html">Проект</a><a data-page="software" href="software.html">Программный комплекс</a><a data-page="models" href="models.html">Конструкция</a><a data-page="drawings" href="drawings.html">Чертежи</a><a data-page="stand" href="stand.html">Стенд</a><a data-page="technology" href="technology.html">Изготовление</a><a data-page="validation" href="validation.html">Проверка</a><a data-page="economics" href="economics.html">Экономика</a><a data-page="documents" href="documents.html">Комплект</a></nav></div></header>
+
+  <main id="main">
+    <section class="page-hero"><div class="container page-hero-grid" data-reveal><div><div class="eyebrow">06 · Экономика</div><h1>Модель единичного НИОКР‑заказа</h1><p>Заказ включает инженерный расчёт, адаптированную 3D‑модель, подготовку производства, изготовление, контроль и отчёт. Программный комплекс отдельно не продаётся.</p></div><div class="page-meta"><div><span>Заказ М1</span><strong>150 000 ₽</strong></div><div><span>Заказ М2</span><strong>165 000 ₽</strong></div><div><span>Печать</span><strong>14 560 ₽</strong></div><div><span>Горизонт</span><strong>5 лет</strong></div></div></div></section>
+
+    <section class="section"><div class="container">
+      <div class="section-heading" data-reveal><div><div class="eyebrow">Одно рабочее колесо</div><h2>Цена и прибыль</h2></div><p>Прибыль указана до налогов. Экономическая модель сформирована для конкурсного НИОКР‑сценария; цены и затраты являются расчётными допущениями 2026 года.</p></div>
+      <div class="economy-cards" data-reveal role="list">
+        <article class="economy-card" role="listitem"><div class="economy-card-head"><span>М1</span><small>PA12‑CF10 + втулка</small></div><div class="order-price"><span>Цена заказа</span><strong data-count="150000" data-suffix=" ₽">0 ₽</strong></div><div class="profit-line"><span>Прибыль до налогов</span><strong>91 895 ₽</strong></div></article>
+        <article class="economy-card featured" role="listitem"><div class="economy-card-head"><span>М2</span><small>+ наружное армирование</small></div><div class="order-price"><span>Цена заказа</span><strong data-count="165000" data-suffix=" ₽">0 ₽</strong></div><div class="profit-line"><span>Прибыль до налогов</span><strong>97 676 ₽</strong></div></article>
+      </div>
+    </div></section>
+
+    <section class="section section-soft"><div class="container">
+      <div class="section-heading" data-reveal><div><div class="eyebrow">Сводная структура</div><h2>Выручка, затраты и прибыль</h2></div><p>Затраты получены как разница между ценой заказа и прибылью до налогов.</p></div>
+      <div class="cost-chart" data-reveal>
+        <div class="cost-row"><span>М1 · выручка</span><div class="cost-track"><i style="--width:90.9%"></i></div><strong>150 000 ₽</strong></div>
+        <div class="cost-row"><span>М1 · затраты</span><div class="cost-track"><i style="--width:35.2%"></i></div><strong>58 105 ₽</strong></div>
+        <div class="cost-row orange"><span>М1 · прибыль</span><div class="cost-track"><i style="--width:55.7%"></i></div><strong>91 895 ₽</strong></div>
+        <div class="cost-row"><span>М2 · выручка</span><div class="cost-track"><i style="--width:100%"></i></div><strong>165 000 ₽</strong></div>
+        <div class="cost-row"><span>М2 · затраты</span><div class="cost-track"><i style="--width:40.8%"></i></div><strong>67 324 ₽</strong></div>
+        <div class="cost-row orange"><span>М2 · прибыль</span><div class="cost-track"><i style="--width:59.2%"></i></div><strong>97 676 ₽</strong></div>
+      </div>
+    </div></section>
+
+    <section class="section"><div class="container">
+      <div class="section-heading" data-reveal><div><div class="eyebrow">Состав заказа</div><h2>Что входит в цену заказа</h2></div><p>Экономическая модель оценивает инженерный результат, а не только стоимость печатной детали.</p></div>
+      <div class="info-grid" data-reveal>
+        <article class="info-card"><span>01 · ИНЖИНИРИНГ</span><h3>Расчёт и адаптация</h3><p>Подготовка исходных данных, выбор варианта и выпуск адаптированной 3D‑модели.</p></article>
+        <article class="info-card"><span>02 · ПРОИЗВОДСТВО</span><h3>Изготовление и контроль</h3><p>Подготовка печати, материал, постобработка, втулка и предусмотренные операции контроля.</p></article>
+        <article class="info-card"><span>03 · РЕЗУЛЬТАТ</span><h3>Модель и отчёт</h3><p>STEP‑модель, паспорт исполнения и инженерный отчёт в согласованном объёме.</p></article>
+      </div>
+    </div></section>
+
+    <section class="section section-soft"><div class="container">
+      <div class="section-heading" data-reveal><div><div class="eyebrow">Пятилетний сценарий</div><h2>Показатели экономической модели</h2></div><p>Расчёт выполнен на основе модели затрат и ценовых допущений 2026 года.</p></div>
+      <div class="scenario-grid" data-reveal role="list"><div role="listitem"><span>ПРИБЫЛЬ · 5 ЛЕТ</span><strong data-count="2867599" data-suffix=" ₽">0 ₽</strong><small>прогнозируемая прибыль за 5 лет</small></div><div role="listitem"><span>NPV · СТАВКА 20%</span><strong data-count="1321737" data-suffix=" ₽">0 ₽</strong><small>дисконтированный экономический эффект</small></div><div role="listitem"><span>ИНЖЕНЕРНЫЙ ЦИКЛ</span><strong>120 → 40 ч</strong><small>сокращение трудоёмкости с программным комплексом</small></div></div>
+      <div class="disclaimer mt-24" data-reveal>Расчёт выполнен на основе модели затрат и ценовых допущений 2026 года. Показатели предназначены для сравнения сценариев и уточняются при коммерческой реализации.</div>
+    </div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><img class="footer-logo" src="assets/brand/mitk-rk-logo.png" alt="МИТК-РК" loading="lazy"><p>Подробные расчёты, исходные допущения и сценарии приведены в технико‑экономическом обосновании проекта.</p><a href="documents/0014_pz_econ.pdf">Открыть ТЭО →</a></div></footer>
+  <script src="assets/site.js"></script>
+</body></html>

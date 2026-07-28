@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#35374A">
+  <meta name="description" content="Интерактивное сравнение рабочих колёс РК-200-Э, РК-200-Д: геометрия, давление, КПД и STEP-модели.">
+  <title>Конструкции РК-200 — МИТК-РК</title><link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" href="assets/brand/mitk-rk-logo.png" type="image/png">
+  <link rel="canonical" href="https://mitk-rk.example.com/models.html">
+  <meta property="og:title" content="3D-модели — МИТК-РК">
+  <meta property="og:description" content="Интерактивные 3D-модели компрессора МИТК-РК">
+  <meta property="og:type" content="website">
+  <noscript><style>[data-reveal]{opacity:1!important;transform:none!important}</style></noscript>
+  <style>.skip-link{position:absolute;top:-100%;left:16px;z-index:999;padding:8px 16px;background:#35374A;color:#fff;font-weight:700;text-decoration:none;border-radius:0 0 4px 4px}.skip-link:focus{top:0}
+  [data-page="models"] .page-hero{color:#fff;background:linear-gradient(135deg,#0d1117 0%,#161b22 60%,#1c2028 100%)}
+  [data-page="models"] .page-hero .eyebrow::before{background:linear-gradient(90deg,#ff8a38,#e06020)}
+  [data-page="models"] .page-hero .page-meta{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.1)}
+  [data-page="models"] .page-hero .page-meta div:hover{background:rgba(255,138,56,.08)}
+  [data-page="models"] .section-heading .eyebrow{color:#d06828}
+  [data-page="models"] .model-layout{border-color:#2a2c40;position:relative;overflow:hidden}
+  [data-page="models"] .model-layout::before{content:"";position:absolute;top:-40px;right:-40px;width:120px;height:120px;border:1px solid rgba(255,107,0,.08);border-radius:50%;pointer-events:none;z-index:1}
+  [data-page="models"] .model-layout::after{content:"";position:absolute;bottom:-30px;left:-30px;width:80px;height:80px;border:1px solid rgba(255,107,0,.06);border-radius:50%;pointer-events:none;z-index:1}
+  [data-page="models"] .model-side{background:#1a1b2e;color:#d0d2e0}
+  [data-page="models"] .model-side h2{color:#fff;background:none;-webkit-text-fill-color:unset}
+  [data-page="models"] .model-side .tag{color:var(--orange);border-color:rgba(255,107,0,.3);background:rgba(255,107,0,.08)}
+  [data-page="models"] .model-side p{color:#a0a2b4}
+  [data-page="models"] .model-side .metric-line{border-color:#2a2c40;transition:background .2s}
+  [data-page="models"] .model-side .metric-line:hover{background:rgba(255,107,0,.04)}
+  [data-page="models"] .model-side .metric-line span{color:#888aa0}
+  [data-page="models"] .model-side .metric-line strong{color:#fff;background:none;-webkit-text-fill-color:unset}
+  [data-page="models"] .model-switch button{border-color:#3a3c50;color:#a0a2b4;background:#252740;transition:all .25s ease}
+  [data-page="models"] .model-switch button:hover{border-color:var(--orange);color:var(--orange)}
+  [data-page="models"] .model-switch button.is-active{background:linear-gradient(135deg,var(--orange) 0%,var(--orange-deep) 100%);border-color:var(--orange);color:#fff;box-shadow:0 4px 16px rgba(255,107,0,.25)}
+  [data-page="models"] .metric-line{border-color:#2a2c40;transition:background .2s}
+  [data-page="models"] .metric-line:hover{background:rgba(255,107,0,.04)}
+  [data-page="models"] .metric-line span{color:#888aa0}
+  [data-page="models"] .model-side .button{color:#fff;background:linear-gradient(135deg,var(--orange) 0%,var(--orange-deep) 100%);border-color:var(--orange)}
+  [data-page="models"] .model-side .button:hover{background:linear-gradient(135deg,var(--orange-deep) 0%,#e63500 100%);box-shadow:0 6px 20px rgba(255,107,0,.3)}
+  [data-page="models"] .section-soft{background-image:radial-gradient(circle at 1px 1px,rgba(255,107,0,.02) 1px,transparent 0);background-size:20px 20px}
+  </style>
+</head>
+<body data-page="models">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="index.html"><img src="assets/brand/mitk-rk-logo.png" alt="МИТК-РК"></a><button class="menu-button" type="button" aria-expanded="false" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Основная навигация"><a data-page="project" href="project.html">Проект</a><a data-page="software" href="software.html">Программный комплекс</a><a data-page="models" href="models.html">Конструкция</a><a data-page="drawings" href="drawings.html">Чертежи</a><a data-page="stand" href="stand.html">Стенд</a><a data-page="technology" href="technology.html">Изготовление</a><a data-page="validation" href="validation.html">Проверка</a><a data-page="economics" href="economics.html">Экономика</a><a data-page="documents" href="documents.html">Комплект</a></nav>
+  </div></header>
+
+  <main id="main">
+    <section class="page-hero"><div class="container page-hero-grid" data-reveal>
+      <div><div class="eyebrow">03 · Конструкция</div><h1>РК‑200‑Э / РК‑200‑Д</h1><p>Две геометрии одного диаметра, рассчитанные по разным критериям: максимальный расчётный КПД и максимальный расчётный прирост полного давления.</p></div>
+      <div class="page-meta"><div><span>Диаметр</span><strong>200 мм</strong></div><div><span>Варианты</span><strong>2</strong></div><div><span>Лопатки Э / Д</span><strong>10+10 / 13+13</strong></div><div><span>Формат</span><strong>STEP</strong></div></div>
+    </div></section>
+
+    <section class="section"><div class="container">
+      <div class="model-layout" data-reveal>
+        <div class="viewer" data-viewer data-model="pressure">
+          <img class="viewer-fallback" src="assets/renders/rk-200-d-top.svg" alt="Рабочее колесо РК-200-Д, вид сверху">
+          <canvas aria-label="Интерактивная 3D-модель рабочего колеса"></canvas><div class="viewer-loading">Загрузка модели</div><span class="viewer-label">РАСЧЁТНАЯ 3D‑ГЕОМЕТРИЯ · WEBGL</span>
+          <div class="viewer-controls" role="group" aria-label="Управление просмотром"><button type="button" data-view="iso">3D</button><button class="is-active" type="button" data-view="top">Сверху</button><button type="button" data-view="front">Профиль</button><button class="is-active" type="button" data-rotate aria-label="Включить/выключить авто-вращение">↻</button></div>
+        </div>
+        <aside class="model-side">
+          <div class="model-switch"><button type="button" data-model-select="efficiency">РК‑200‑Э</button><button class="is-active" type="button" data-model-select="pressure">РК‑200‑Д</button></div>
+          <div class="model-data" data-model-data="efficiency"><span class="tag">max_efficiency</span><h2>РК‑200‑Э</h2><p>Вариант с приоритетом расчётного полного КПД.</p><div class="metric-table"><div class="metric-line"><span>Основные / сплиттерные</span><strong>10 / 10</strong></div><div class="metric-line"><span>Расчётный ηₜₜ</span><strong>74,14%</strong></div><div class="metric-line"><span>Δpₜ · 12 000 мин⁻¹</span><strong>10,853 кПа</strong></div><div class="metric-line"><span>Стендовый режим</span><strong>3 000 мин⁻¹</strong></div></div><a class="button" href="downloads/rk-200-e-max-efficiency.step" download>Скачать STEP ↓</a></div>
+          <div class="model-data is-active" data-model-data="pressure"><span class="tag">max_pressure</span><h2>РК‑200‑Д</h2><p>Вариант с приоритетом расчётного прироста полного давления.</p><div class="metric-table"><div class="metric-line"><span>Основные / сплиттерные</span><strong>13 / 13</strong></div><div class="metric-line"><span>Расчётный ηₜₜ</span><strong>71,23%</strong></div><div class="metric-line"><span>Δpₜ · 12 000 мин⁻¹</span><strong>12,089 кПа</strong></div><div class="metric-line"><span>Стендовый режим</span><strong>3 000 мин⁻¹</strong></div></div><a class="button" href="downloads/rk-200-d-max-pressure.step" download>Скачать STEP ↓</a></div>
+        </aside>
+      </div>
+      <div class="section-heading mt-80" data-reveal><div><div class="eyebrow">Лопаточный аппарат</div><h2>Общие конструктивные решения</h2></div><p>Обе версии имеют одинаковый наружный диаметр и принцип построения, но различаются числом лопаточных каналов и расчётным приоритетом.</p></div>
+      <div class="info-grid" data-reveal>
+        <article class="info-card"><span>01 · ОСНОВНЫЕ ЛОПАТКИ</span><h3>Полная длина канала</h3><p>Основные лопатки формируют направление потока от входной области к наружному диаметру.</p></article>
+        <article class="info-card"><span>02 · СПЛИТТЕРЫ</span><h3>Дополнительные каналы</h3><p>Укороченные лопатки увеличивают число каналов в выходной части без полного загромождения входа.</p></article>
+        <article class="info-card"><span>03 · ЕДИНОЕ ТЕЛО</span><h3>Корневые переходы</h3><p>Лопатки объединены со ступицей в твёрдое тело; переходы у корня учитываются при подготовке производства и FEA.</p></article>
+      </div>
+    </div></section>
+
+    <section class="section section-soft"><div class="container">
+      <div class="section-heading" data-reveal><div><div class="eyebrow">Логика сравнения</div><h2>Два расчётных приоритета</h2></div><p>РК‑200‑Э, РК‑200‑Д сравниваются в единой постановке. Один вариант ориентирован на расчётный КПД, второй — на прирост полного давления.</p></div>
+      <div class="chart-card" data-reveal>
+        <div class="parameter-table">
+          <div class="parameter-row"><span>Общий наружный диаметр</span><strong>200 мм</strong><small>единая базовая архитектура</small></div>
+          <div class="parameter-row"><span>Лопаточный аппарат</span><strong>10+10</strong><small>РК‑200‑Э</small></div>
+          <div class="parameter-row"><span>Лопаточный аппарат</span><strong>13+13</strong><small>РК‑200‑Д</small></div>
+          <div class="parameter-row"><span>Расчётный ηₜₜ</span><strong>74,14%</strong><small>71,23%</small></div>
+          <div class="parameter-row"><span>Δpₜ · 12 000 мин⁻¹</span><strong>10,853 кПа</strong><small>12,089 кПа</small></div>
+        </div>
+      </div>
+    </div></section>
+
+    <section class="section"><div class="container">
+      <div class="section-heading" data-reveal><div><div class="eyebrow">Итоговое сравнение</div><h2>Различия вариантов</h2></div><p>Более высокое расчётное давление РК‑200‑Д сопровождается меньшим расчётным КПД и большим числом лопаток.</p></div>
+      <div class="parameter-table" data-reveal>
+        <div class="parameter-row"><span>Код исполнения</span><strong>РК‑200‑Э</strong><small>РК‑200‑Д</small></div>
+        <div class="parameter-row"><span>Критерий</span><strong>КПД</strong><small>Полное давление</small></div>
+        <div class="parameter-row"><span>Лопаточный аппарат</span><strong>10 + 10</strong><small>13 + 13</small></div>
+        <div class="parameter-row"><span>Расчётный приоритет</span><strong>КПД</strong><small>Полное давление</small></div>
+        <div class="parameter-row"><span>Наружный диаметр</span><strong>200 мм</strong><small>200 мм</small></div>
+        <div class="parameter-row"><span>Стендовый режим</span><strong>3 000 мин⁻¹</strong><small>3 000 мин⁻¹</small></div>
+        <div class="parameter-row"><span>Расчётный режим</span><strong>12 000 мин⁻¹</strong><small>12 000 мин⁻¹</small></div>
+      </div>
+      <div class="disclaimer mt-24" data-reveal>Значения ηₜₜ и Δpₜ приведены как результаты расчётной модели ПЗ редакции 06. Приёмочные характеристики подтверждаются по программе испытаний.</div>
+    </div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><img class="footer-logo" src="assets/brand/mitk-rk-logo.png" alt="МИТК-РК" loading="lazy"><p>3D‑просмотр показывает облегчённую расчётную сетку; исходные модели рабочего колеса хранятся в формате STEP.</p><a href="technology.html">Материалы и изготовление →</a></div></footer>
+  <script src="assets/model-data.js"></script><script src="assets/viewer-bundle.js"></script><script src="assets/site.js"></script>
+</body></html>

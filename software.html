@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="theme-color" content="#35374A"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Программный комплекс МИТК-РК: параметрическая генерация, автоматическая проверка и экспорт STEP-моделей рабочих колёс.">
+  <title>Программный комплекс — МИТК-РК</title><link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" href="assets/brand/mitk-rk-logo.png" type="image/png">
+  <noscript><style>[data-reveal]{opacity:1!important;transform:none!important}</style></noscript>
+  <link rel="canonical" href="https://mitk-rk.example.com/software.html">
+  <meta property="og:title" content="ПО — МИТК-РК">
+  <meta property="og:description" content="Параметрическое ПО для проектирования компрессора МИТК-РК">
+  <meta property="og:type" content="website">
+  <style>.skip-link{position:absolute;top:-100%;left:16px;z-index:999;padding:8px 16px;background:#35374A;color:#fff;font-weight:700;text-decoration:none;border-radius:0 0 4px 4px}.skip-link:focus{top:0}</style>
+</head>
+<body data-page="software">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="index.html"><img src="assets/brand/mitk-rk-logo.png" alt="МИТК-РК"></a><button class="menu-button" type="button" aria-expanded="false" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Основная навигация"><a data-page="project" href="project.html">Проект</a><a data-page="software" href="software.html">Программный комплекс</a><a data-page="models" href="models.html">Конструкция</a><a data-page="drawings" href="drawings.html">Чертежи</a><a data-page="stand" href="stand.html">Стенд</a><a data-page="technology" href="technology.html">Изготовление</a><a data-page="validation" href="validation.html">Проверка</a><a data-page="economics" href="economics.html">Экономика</a><a data-page="documents" href="documents.html">Комплект</a></nav>
+  </div></header>
+
+  <main id="main">
+    <section class="page-hero"><div class="container page-hero-grid" data-reveal>
+      <div><div class="eyebrow">02 · Программный комплекс</div><h1>Параметрическое проектирование рабочего колеса</h1><p>Программа проверяет исходные данные, формирует варианты геометрии, выполняет автоматический screening и экспортирует единое твёрдое тело STEP.</p></div>
+      <div class="page-meta"><div><span>Варианты</span><strong>3</strong></div><div><span>Выход</span><strong>STEP</strong></div><div><span>Ручной цикл</span><strong>120 ч</strong></div><div><span>С программой</span><strong>40 ч</strong></div></div>
+    </div></section>
+
+    <section class="section"><div class="container">
+      <div class="section-heading" data-reveal><div><div class="eyebrow">Алгоритм</div><h2>Последовательность обработки задачи</h2></div><p>Screening предназначен для раннего контроля геометрии. Он не заменяет CFD, FEA и инженерное заключение.</p></div>
+      <div class="pipeline" data-reveal>
+        <article><span>01</span><h3>Исходные параметры</h3><p>Диаметр, частота, расход, материал и производственные ограничения.</p></article>
+        <article><span>02</span><h3>Три варианта</h3><p>max_efficiency, max_pressure и balanced.</p></article>
+        <article><span>03</span><h3>Автоматический контроль</h3><p>Проходные сечения, горло, зазоры и допустимость геометрии.</p></article>
+        <article><span>04</span><h3>Твёрдое тело</h3><p>Ступица, основные лопатки, сплиттеры и булево объединение.</p></article>
+        <article><span>05</span><h3>STEP и отчёт</h3><p>Передача выбранного варианта на CFD/FEA и производство.</p></article>
+      </div>
+    </div></section>
+
+    <section class="section section-soft"><div class="container">
+      <div class="section-heading" data-reveal><div><div class="eyebrow">Автоматические проверки</div><h2>Контроль до передачи в CAE</h2></div><p>Цель проверок — обнаружить некорректную постановку или геометрию до ресурсоёмкого CFD/FEA‑расчёта.</p></div>
+      <div class="info-grid" data-reveal>
+        <article class="info-card"><span>01 · ВХОД</span><h3>Размерности и диапазоны</h3><p>Контроль единиц, диаметра, частоты вращения и обязательных параметров расчётной конфигурации.</p></article>
+        <article class="info-card"><span>02 · ГЕОМЕТРИЯ</span><h3>Сечения и зазоры</h3><p>Автоматическая проверка проходных сечений, горла, межлопаточного канала и производственных ограничений.</p></article>
+        <article class="info-card"><span>03 · ЭКСПОРТ</span><h3>Целостность модели</h3><p>Контроль объединения ступицы и лопаток перед выпуском единого твёрдого тела STEP.</p></article>
+      </div>
+    </div></section>
+
+    <section class="section section-dark"><div class="container">
+      <div class="terminal-block" data-reveal>
+        <div class="terminal-copy"><div class="eyebrow">Расчётная конфигурация</div><h2>Контролируемые входные данные</h2><p>Параметры проекта хранятся в одной конфигурации и используются при расчёте, построении и выпуске отчёта.</p><a class="button button-orange" href="downloads/impeller-generator.py" download>Скачать исходный код ↓</a></div>
+        <div class="terminal-window"><div class="terminal-head"><i></i><i></i><i></i><span>impeller-generator.py</span></div><pre><span class="code-muted"># USER_PARAMETERS — основные размеры</span>
+geometry = {
+  <span class="code-orange">"D2_mm"</span>: <span class="code-orange">200.0</span>,
+  <span class="code-orange">"D1_shroud_mm"</span>: <span class="code-orange">110.658</span>,
+  <span class="code-orange">"b2_mm"</span>: <span class="code-orange">13.443</span>,
+  <span class="code-orange">"axial_length_mm"</span>: <span class="code-orange">45.0</span>
+}
+blades = {
+  <span class="code-orange">"main_blades"</span>: <span class="code-orange">10</span>,
+  <span class="code-orange">"backsweep_deg"</span>: <span class="code-orange">28.338</span>,
+  <span class="code-orange">"t_le_hub_mm"</span>: <span class="code-orange">2.80</span>,
+  <span class="code-orange">"root_embed_mm"</span>: <span class="code-orange">1.50</span>
+}
+operating = {
+  <span class="code-orange">"rpm"</span>: <span class="code-orange">12_000</span>,
+  <span class="code-orange">"material"</span>: <span class="code-orange">"PA12-CF10"</span>
+}
+
+<span class="code-green">✓ validate_config()</span>
+<span class="code-green">✓ geometry screening complete</span>
+<span class="code-green">✓ watertight STEP prepared</span>
+<span class="code-muted">→ CFD / FEA verification required</span></pre></div>
+      </div>
+    </div></section>
+
+    <section class="section"><div class="container">
+      <div class="section-heading" data-reveal><div><div class="eyebrow">Интерактивная модель</div><h2>Параметрический исследователь</h2></div><p>Упрощённая демонстративная модель: вид сверху рабочего колеса. Полная генерация выполняется Python‑скриптом и включает аэродинамический screening, прочностную проверку и экспорт STEP.</p></div>
+      <div class="param-explorer" data-reveal>
+        <div class="param-svg-wrap">
+          <svg class="param-svg" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg"></svg>
+          <div class="param-svg-legend"><span class="param-legend-hub"></span><i>Основные</i><span class="param-legend-shroud"></span><i>Сплиттеры</i></div>
+        </div>
+        <div class="param-controls">
+          <div class="param-slider"><label>D₂<output id="val-d2">200</output> мм</label><input type="range" min="80" max="300" value="200" step="5" data-param="d2"></div>
+          <div class="param-slider"><label>Лопаток<output id="val-blades">10</output> шт</label><input type="range" min="4" max="16" value="10" step="1" data-param="blades"></div>
+          <div class="param-slider"><label>Задняя разножка<output id="val-bs">35</output>°</label><input type="range" min="0" max="60" value="35" step="1" data-param="backsweep"></div>
+          <div class="param-slider"><label>Частота<output id="val-rpm">12 000</output> мин⁻¹</label><input type="range" min="3000" max="25000" value="12000" step="500" data-param="rpm"></div>
+          <div class="param-results">
+            <div class="param-result"><span>U₂</span><strong id="res-u2">125,7</strong><small>м/с</small></div>
+            <div class="param-result"><span>Mach</span><strong id="res-mach">0,366</strong></div>
+            <div class="param-result"><span>β₂</span><strong id="res-beta2">55</strong><small>°</small></div>
+          </div>
+          <p class="param-note">Демонстративная модель: упрощённый вид сверху и кинематика U₂, Mach, β₂. Точная аэродинамика, прочность и 3D‑геометрия лопаток — в полном стеке Python + CadQuery.</p>
+        </div>
+      </div>
+    </div></section>
+
+    <section class="section section-soft"><div class="container hours-chart" data-reveal>
+      <div><div class="eyebrow">Трудоёмкость</div><h2>Сокращение инженерного цикла</h2><p class="lead">Программа не имеет отдельной цены в экономической модели. Эффект учитывается через снижение ручной трудоёмкости.</p></div>
+      <div class="hours-bars">
+        <div class="hour-bar"><span>Ручной процесс</span><div class="hour-track"><i style="--width:100%"></i></div><strong>120 ч</strong></div>
+        <div class="hour-bar fast"><span>С программой</span><div class="hour-track"><i style="--width:33.33%"></i></div><strong>40 ч</strong></div>
+        <div class="disclaimer">Трудоёмкость 120 → 40 ч приведена как расчётная оценка эффекта параметризации для единичного НИОКР‑заказа.</div>
+      </div>
+    </div></section>
+
+    <section class="section"><div class="container">
+  <div class="section-heading" data-reveal><div><div class="eyebrow">Генератор документации</div><h2>Автоматизация ЕСКД</h2></div><p>Программный комплекс поддерживает подготовку конкурсной документации и единое ведение исходных параметров.</p></div>
+  <div class="eskd-features" data-reveal>
+    <article class="info-card"><span>ФИЧА 01</span><h3>10 DOCX-документов</h3><p>ТУ, методика, паспорта, FMEA, матрица требований, спецификация, формы протоколов — всё формируется программно.</p></article>
+    <article class="info-card"><span>ФИЧА 02</span><h3>ГОСТ-совместимые PDF</h3><p>Конвертация DOCX → PDF с рамками по ГОСТ Р 2.104-2023, штампами по ГОСТ 2.301, блоками по ГОСТ Р 2.105-2019.</p></article>
+    <article class="info-card"><span>ФИЧА 03</span><h3>QA-аудит</h3><p>Автоматическая проверка каждого PDF: размер страницы, размер рамки, наличие штампа, количество страниц.</p></article>
+  </div>
+</div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><img class="footer-logo" src="assets/brand/mitk-rk-logo.png" alt="МИТК-РК" loading="lazy"><p>Программный комплекс ускоряет подготовку модели, но не заменяет CFD/FEA, инженерную экспертизу и испытания.</p><a href="models.html">Конструкции РК‑200 →</a></div></footer>
+  <script src="assets/site.js"></script>
+</body></html>
