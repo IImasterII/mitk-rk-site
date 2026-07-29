@@ -201,9 +201,18 @@
       particles.push(p);
     }
 
+    let running = true;
+    const heroSection = heroCanvas.closest('section');
+    if (heroSection && 'IntersectionObserver' in window) {
+      const heroObs = new IntersectionObserver((entries) => {
+        running = entries[0]?.isIntersecting ?? true;
+      }, { threshold: 0 });
+      heroObs.observe(heroSection);
+    }
+
     function loop() {
       ctx.clearRect(0, 0, w, h);
-      for (const p of particles) { p.update(); p.draw(); }
+      if (running) for (const p of particles) { p.update(); p.draw(); }
       requestAnimationFrame(loop);
     }
     loop();
@@ -295,5 +304,40 @@
     });
 
     draw();
+  }
+
+  /* ── Lightbox for images ── */
+  const lightboxTriggers = document.querySelectorAll('[data-lightbox]');
+  if (lightboxTriggers.length) {
+    const lb = document.createElement('div');
+    lb.className = 'lightbox';
+    lb.innerHTML = '<button class="lightbox-close" type="button" aria-label="Закрыть">×</button><img alt=""><div class="lightbox-caption"></div>';
+    document.body.appendChild(lb);
+    const lbImg = lb.querySelector('img');
+    const lbCap = lb.querySelector('.lightbox-caption');
+    const lbClose = lb.querySelector('.lightbox-close');
+
+    function open(src, caption) {
+      lbImg.src = src;
+      lbCap.textContent = caption || '';
+      lb.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+    }
+    function close() {
+      lb.classList.remove('is-open');
+      document.body.style.overflow = '';
+      lbImg.src = '';
+    }
+
+    lightboxTriggers.forEach((trigger) => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const img = trigger.querySelector('img') || trigger;
+        open(img.src, trigger.dataset.lightbox || img.alt || '');
+      });
+    });
+
+    lb.addEventListener('click', (e) => { if (e.target === lb || e.target === lbClose) close(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && lb.classList.contains('is-open')) close(); });
   }
 })();

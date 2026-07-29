@@ -59,13 +59,25 @@
       </div>
       <div class="section-heading mt-80" data-reveal><div><div class="eyebrow">Расчётная аэродинамика</div><h2>Сравнительная оценка вариантов</h2></div><p>Значения приведены по ПЗ редакции 06 для расчётной точки 12 000 мин⁻¹ и отделены от приёмочных стендовых характеристик.</p></div>
       <div class="objective-grid">
-        <div class="placeholder-chart" data-reveal><div><strong>РК‑200‑Д · 13+13 лопаток</strong><span>ηₜₜ = 71,23 % · Δpₜ = 12,089 кПа · приоритет полного давления</span></div></div>
-        <div class="placeholder-chart" data-reveal><div><strong>РК‑200‑Э · 10+10 лопаток</strong><span>ηₜₜ = 74,14 % · Δpₜ = 10,853 кПа · приоритет полного КПД</span></div></div>
+        <a class="cfd-card" href="assets/photos/cfd-01.png" target="_blank" rel="noopener" data-reveal>
+          <div class="cfd-card-img"><img src="assets/photos/cfd-01.png" alt="CFD-визуализация давления РК-200-Д" loading="lazy"><span class="cfd-card-badge">ANSYS CFD</span></div>
+          <div class="cfd-card-body"><strong>РК‑200‑Д · 13+13 лопаток</strong><span>ηₜₜ = 71,23 % · Δpₜ = 12,089 кПа · приоритет полного давления</span><u>Полный отчёт ↗</u></div>
+        </a>
+        <a class="cfd-card" href="assets/photos/cfd-02.png" target="_blank" rel="noopener" data-reveal>
+          <div class="cfd-card-img"><img src="assets/photos/cfd-02.png" alt="CFD-визуализация скорости РК-200-Э" loading="lazy"><span class="cfd-card-badge">ANSYS CFD</span></div>
+          <div class="cfd-card-body"><strong>РК‑200‑Э · 10+10 лопаток</strong><span>ηₜₜ = 74,14 % · Δpₜ = 10,853 кПа · приоритет полного КПД</span><u>Полный отчёт ↗</u></div>
+        </a>
       </div>
       <div class="section-heading mt-80" data-reveal><div><div class="eyebrow">Прочность</div><h2>Расчётные материалы ANSYS</h2></div><p>Архив содержит постановки РК‑200‑Э, РК‑200‑Д для 3 000 и 12 000 мин⁻¹. Отдельный расчёт прочности 0018 устанавливает подтверждённую область стендового применения и ограничения проектной точки.</p></div>
       <div class="objective-grid">
-        <a class="placeholder-chart" href="documents/0018_rr_strength_rk200e.pdf" target="_blank" rel="noopener"><div><strong>EMTH…0018 РР</strong><span>Расчёт прочности РК‑200‑Э и оценка областей применения</span></div></a>
-        <a class="placeholder-chart" href="calculations/ReportANSYS_pressure_12000_bonded_without_vtulka.pdf" target="_blank" rel="noopener"><div><strong>ANSYS · РК‑200‑Д</strong><span>Исходный отчёт для расчётной точки 12 000 мин⁻¹</span></div></a>
+        <a class="cfd-card" href="calculations/ReportANSYS_maxeff_with_vtulka3000.pdf" target="_blank" rel="noopener" data-reveal>
+          <div class="cfd-card-img"><img src="assets/photos/cfd-07.png" alt="ANSYS Mechanical — напряжения РК-200-Э" loading="lazy"><span class="cfd-card-badge">ANSYS Mechanical</span></div>
+          <div class="cfd-card-body"><strong>EMTH…0018 РР</strong><span>Расчёт прочности РК‑200‑Э и оценка областей применения</span><u>Открыть PDF ↗</u></div>
+        </a>
+        <a class="cfd-card" href="calculations/ReportANSYS_pressure_12000_bonded_without_vtulka.pdf" target="_blank" rel="noopener" data-reveal>
+          <div class="cfd-card-img"><img src="assets/photos/cfd-01.png" alt="ANSYS — напряжения РК-200-Д при 12000 мин⁻¹" loading="lazy"><span class="cfd-card-badge">ANSYS · 12 000 мин⁻¹</span></div>
+          <div class="cfd-card-body"><strong>ANSYS · РК‑200‑Д</strong><span>Исходный отчёт для расчётной точки 12 000 мин⁻¹</span><u>Открыть PDF ↗</u></div>
+        </a>
       </div>
     </div></section>
 
@@ -95,6 +107,28 @@
           </table>
         </div>
         <p class="fmea-note">Полный отчёт FMEA (20 режимов) доступен в документации: <a href="documents/0008_d_fmea.pdf" target="_blank" rel="noopener">EMTH.19.01.02.59.00.000.0008 Д</a></p>
+      </div>
+    </div></section>
+
+    <section class="section section-soft"><div class="container">
+      <div class="section-heading" data-reveal><div><div class="eyebrow">ANSYS · Видеорезультаты</div><h2>Прочностные и деформационные анимации</h2></div><p>Видеоэкспорт результатов ANSYS Mechanical для стендового и расчётного режимов. Открывается в новой вкладке для воспроизведения.</p></div>
+      <div class="objective-grid" data-reveal>
+        <a class="cfd-card" href="calculations/max_eff_totaldeformation3000_video.wmv" target="_blank" rel="noopener">
+          <div class="cfd-card-img"><img src="assets/photos/cfd-07.png" alt="ANSYS — полные деформации при 3000 мин⁻¹" loading="lazy"><span class="cfd-card-badge">WMV · 3 000 мин⁻¹</span></div>
+          <div class="cfd-card-body"><strong>РК‑200‑Э · Деформации</strong><span>Полные деформации при максимальном КПД, 3 000 мин⁻¹, с втулкой</span><u>Открыть видео ↗</u></div>
+        </a>
+        <a class="cfd-card" href="calculations/max_pressure_eqstress_12000_bonded_without_vtulka_video.wmv" target="_blank" rel="noopener">
+          <div class="cfd-card-img"><img src="assets/photos/cfd-01.png" alt="ANSYS — эквивалентные напряжения при 12000 мин⁻¹" loading="lazy"><span class="cfd-card-badge">WMV · 12 000 мин⁻¹</span></div>
+          <div class="cfd-card-body"><strong>РК‑200‑Д · Напряжения</strong><span>Эквивалентные напряжения при 12 000 мин⁻¹, без втулки, bonded</span><u>Открыть видео ↗</u></div>
+        </a>
+        <a class="cfd-card" href="calculations/max_pressure_totaldeformation_3000_bonded_without_vtulka_video.wmv" target="_blank" rel="noopener">
+          <div class="cfd-card-img"><img src="assets/photos/cfd-02.png" alt="ANSYS — полные деформации при 3000 мин⁻¹" loading="lazy"><span class="cfd-card-badge">WMV · 3 000 мин⁻¹</span></div>
+          <div class="cfd-card-body"><strong>РК‑200‑Д · Деформации</strong><span>Полные деформации при 3 000 мин⁻¹, без втулки, bonded</span><u>Открыть видео ↗</u></div>
+        </a>
+        <a class="cfd-card" href="calculations/max_pressure_eqstress_3000_bonded_without_vtulka_video.wmv" target="_blank" rel="noopener">
+          <div class="cfd-card-img"><img src="assets/photos/cfd-07.png" alt="ANSYS — эквивалентные напряжения при 3000 мин⁻¹" loading="lazy"><span class="cfd-card-badge">WMV · 3 000 мин⁻¹</span></div>
+          <div class="cfd-card-body"><strong>РК‑200‑Д · Напряжения</strong><span>Эквивалентные напряжения при 3 000 мин⁻¹, без втулки, bonded</span><u>Открыть видео ↗</u></div>
+        </a>
       </div>
     </div></section>
   </main>
